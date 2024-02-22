@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 18px;
+}
+body main section {
+  width: 330px;
+  background-color: hsl(216, 50%, 16%);
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+body main section .imgholder {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+body main section .imgholder:hover .hoverview {
+  opacity: 1;
+}
+body main section .imgholder img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+body main section .imgholder .hoverview {
+  position: absolute;
+  width: 100%;
+  height: 98%;
+  background-color: hsla(178, 100%, 50%, 0.658);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 350ms ease;
+}
+body main section h1 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: color 300ms ease;
+}
+body main section h1:hover {
+  color: hsl(178, 100%, 50%);
+}
+body main section p {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+}
+body main section .price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+body main section .price h2 {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main section .price h2 svg {
+  margin-right: 0.4rem;
+}
+body main section .price h3 {
+  color: hsl(215, 51%, 70%);
+  font-weight: 400;
+  font-size: 1rem;
+}
+body main section .price h3 svg {
+  margin-right: 0.4rem;
+}
+body main section .profile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  border-top: 1px solid hsl(215, 32%, 27%);
+}
+body main section .profile img {
+  margin-top: 1rem;
+  width: 2rem;
+  border: 2px solid hsl(0, 0%, 100%);
+  border-radius: 100%;
+}
+body main section .profile h4 {
+  margin-top: 1rem;
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  font-size: 1rem;
+}
+body main section .profile h4 span {
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  cursor: pointer;
+  transition: color 300ms ease;
+}
+body main section .profile h4 span:hover {
+  color: hsl(178, 100%, 50%);
+}/*# sourceMappingURL=style.css.map */
